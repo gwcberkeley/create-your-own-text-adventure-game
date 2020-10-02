@@ -89,7 +89,7 @@ def myTextAdvGame(storyline, question, answerA, answerB):
     answer = ""
     while(answer != answerA and answer != answerB):
         answer = str(input(question + " "))
-        if(answer is "QUIT"):
+        if(answer == "QUIT"):
             exit()
     return answer
 
