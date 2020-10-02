@@ -44,15 +44,15 @@ left = "You start to power walk into the building. You break into a run when you
 # Now, let's use a conditional to decide whether to go to Story Element 2A or 2B.
 
 # Check if the user wants to exit the program
-if(answer is "QUIT"):
+if(answer == "QUIT"):
     quit()
 
 # Check if user wants to go RIGHT, then print StoryElement for A
-if(answer is "RIGHT"):
+if(answer == "RIGHT"):
     print("You look for women from your GWC College Loop to ask for directions.")
 
 # Check if user wants to go LEFT, then print StoryElement for B
-if(answer is "LEFT"):
+if(answer == "LEFT"):
     print("You start to power walk into the building. You break into a run when you catch a glimpse of a friend in the computer lab.")
 
 # Step 5: Loops
@@ -63,7 +63,7 @@ if(answer is "LEFT"):
 while(answer != right and answer != left):
     # Ask question of which direction you would like to go and store their response
     answer = str(input(question + " "))
-    if(answer is "QUIT"):
+    if(answer == "QUIT"):
         exit()
 
 # If the while loop exits, this means that the user has typed "RIGHT", "LEFT", OR "QUIT".
